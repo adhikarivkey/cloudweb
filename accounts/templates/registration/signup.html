@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load bootstrap4 %}
+{% load crispy_forms_tags %}
+{% block title %}
+Sign Up
+{% endblock %}
+
+
+{% block body %}
+    <div class="signbox">
+        <img src="{% static 'images/log.png' %}" class="avatar" >
+
+            <h1>Sign Up for Free</h1>
+            {% if form.errors %}
+                <p style="color: red">Check your details</p>
+            {% endif %}
+            <form class="formbox" method="POST">
+                {% csrf_token %}
+                {% bootstrap_form form layout='inline' %}
+                <input type="submit" name="" value="Sign Up">
+                <h7 style="font-size:12px">Already have an account </h7><a href="{% url 'account:login' %}">Sign In</a><h7 style="font-size:12px"> here</h7>
+            </form>
+        </div>
+    
+
+
+{% endblock %}
