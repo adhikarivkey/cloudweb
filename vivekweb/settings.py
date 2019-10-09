@@ -26,7 +26,11 @@ SECRET_KEY = '*j6-i+#93o0e*fk%5lov3!jml$=v^_j(uc5+*!=o$ipcy%w&^t'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+<<<<<<< HEAD
 ALLOWED_HOSTS = ['*']
+=======
+ALLOWED_HOSTS = []
+>>>>>>> 711ce436a88eed86e710b099fb8fd8bdcac43b60
 
 
 # Application definition
