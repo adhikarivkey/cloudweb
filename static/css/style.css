@@ -1,0 +1,154 @@
+.main{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+    background-position:center;
+    background-size: cover;
+    position: absolute;
+}
+
+.button {
+    padding:1em;
+    text-align: center;
+    display:inline-block;
+    text-decoration: none !important;
+    margin:0 auto;
+    border: .5px solid white;
+    height: 40px;
+    padding-top: 6px;
+    padding-bottom: 4px;
+    width: 120px;
+    background: transparent;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.button:hover{
+    color: #ffffff;
+    background: linear-gradient(to left,#2193b0, #6dd5ed);
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 300;
+}
+h2{
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: black;
+  font-size: 18px;
+}
+
+h2:hover
+{
+    color: white;
+    cursor: pointer;
+}
+
+
+.atag{
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+
+}
+
+.main_body h1{
+    font-family: "Palationo Linotype","Book Antiqua",Palationo,serif;
+    margin-top: 35px; 
+    text-align: center;
+    font-size: 100px;
+    font-weight: lighter;
+    color: #ffffff;
+}
+.main_body h1:hover
+{
+    color: #11f0dd;
+}
+.main_body p{
+    font-size: 25px;
+    font-weight: lighter;
+    text-align: center;
+    color: #ffffff;
+}
+
+.signbox{
+    width: 400px;
+    background: linear-gradient(to left,#2193b0, #6dd5ed);;
+    font-family: 'Titillium Web', sans-serif;
+    color: black;
+    top: 50%;
+    margin-top: 50px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    text-align: center;
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+
+}
+.signbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 90%;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.signbox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #32a883;
+    color: black;
+}
+
+.formbox input[type="text"], input[type="password"], input[type="email"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 16px;
+}
+
+.formbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: black;
+}
+
+.formbox a:hover
+{
+    color: #ffc107;
+}
+.signbox a{
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 20px;
+    color: red;
+}
+
+.signbox a:hover
+{
+    color: white;
+}

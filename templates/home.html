@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% load static %}
+
+{% block title %}
+CLOUD HOME
+{% endblock%}
+
+{% block body %}
+<div class="main" style="background-image: url({% static 'images/bg-pic.jpg' %})">
+    <div class="container">
+        <div class="main_body">
+            <h1>Let go into the cloud</h1>
+            <p>This website stores your personal data in our cloud database. You can add images,songs,video etc.</p>
+        </div>
+    </div>
+        <div class="atag">
+            {% if user.is_authenticated %}
+                <a href="{% url 'user_data:data' %}" class="button">Upload</a>
+            {% else %}
+                <a href="{% url 'account:login' %}" class="button">Login</a>
+            {% endif %}
+        </div>
+</div>
+
+{% endblock%}
+

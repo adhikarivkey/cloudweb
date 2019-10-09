@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% load static %}
+
+{% block title %}
+PICTURE
+{% endblock%}
+
+{% block body %}
+<div class="container" style="margin-top: 25px">
+	<h1 style="color:green;text-align:center;font-size: 30px">Welcome {{user.first_name}}</h1> 
+	<div class="card-group">
+		<div class="row">
+			{% for i in data %}
+				<div class="card col-md-4"  style="margin-bottom: 5px;">
+					<a href="{% url 'user_data:getid' i.id %} ">
+						<img class="card-img-top" src= "{{ i.image.url }}" alt="Avatar" >
+					</a>
+					<div class="card-body">
+						<a href="{% url 'user_data:getid' i.id %} ">
+							<h3 class="card-title">{{ i.title }}</h3>
+						</a>
+						<p class="card-text">{{ i.description }}</p>
+
+					</div>
+				</div>
+				
+			{% endfor %}
+		</div>
+	</div>
+</div>
+        
+        
+
+{% endblock%}
+
