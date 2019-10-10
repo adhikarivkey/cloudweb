@@ -10,6 +10,7 @@ Login
 {% endblock %}
 
 {% block body %}
+<div class="main" style="background-image:linear-gradient(45deg,#0f8,#08f);">
     <div class="signbox">
     	<img src="{% static 'images/log.png' %}" class="avatar" >
 
@@ -30,6 +31,7 @@ Login
             <h7 style="font-size:12px">Don't have an account </h7><a href="{% url 'account:signup' %}">Sign Up</a><h7 style="font-size:12px"> here</h7>
         </form>
     </div>
+</div>
 
 {% endblock %}
 
