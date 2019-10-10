@@ -156,7 +156,7 @@ AUTHENTICATION_BACKENDS = (
     'allauth.account.auth_backends.AuthenticationBackend',
 )
 
-SITE_ID = 1
+SITE_ID = 2
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
@@ -164,4 +164,4 @@ EMAIL_HOST_USER = 'djangoweb303@gmail.com'
 EMAIL_HOST_PASSWORD = 'kdirdliafnjhchhr'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = 'Cloud Team <noreply@adhikaricloud.com>'
+DEFAULT_FROM_EMAIL = 'AdhikariCloud Team <noreply@adhikaricloud.com>'
