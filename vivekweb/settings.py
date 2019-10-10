@@ -165,7 +165,7 @@ EMAIL_HOST_USER = 'apikey'
 EMAIL_HOST_PASSWORD = os.getenv('DB_PASS')
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = 'AdhikariCloud team <noreply@adhikarivivek.com>'
+DEFAULT_FROM_EMAIL = 'noreply@adhikaricloud.com'
 ACCOUNT_EMAIL_SUBJECT_PREFIX = 'Contact email received from WebCloud'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
